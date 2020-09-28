@@ -21,10 +21,17 @@ Thanks to its powerful naming features, you just have to set your filename and s
 
 Grabber works on Windows, Mac, and Linux. It is available in English, French, Russian, simplified Chinese, and Spanish.
 
-## Download
+## Download and Install
+
+### Windows
+
 You can download the latest release [here](https://github.com/Bionus/imgbrd-grabber/releases/latest), or find all previous releases [here](https://github.com/Bionus/imgbrd-grabber/releases).
 
 For users interested, a nightly version is built automatically on every commit on the `develop` branch, and can be downloaded [here](https://github.com/Bionus/imgbrd-grabber/releases/nightly). Note that it might be less stable than official releases, so use at your own risk.
+
+### Linux & Mac:
+
+Follow the Compilation instructions below.
 
 ## Features
 
@@ -98,10 +105,23 @@ You can add additional sources very easily, but here's a short list of some sour
 * Twitter
 
 ## Compilation
-See the [Compilation](https://bionus.github.io/imgbrd-grabber/docs/compilation.html) documentation to know how to build Grabber.
 
-* Linux: run `./build.sh` at the root of the repository
-* macOS: run `./build-mac.sh` at the root of the repository
+Previous (outdated) [Compilation](https://bionus.github.io/imgbrd-grabber/docs/compilation.html) page is available.
+
+### Windows
+
+See the [Compilation](https://bionus.github.io/imgbrd-grabber/docs/compilation.html) documentation.
+
+### Linux and Mac
+
+1. Clone the repository: `git clone https://github.com/Bionus/imgbrd-grabber.git` 
+2. Enter the root of the repository: `cd imgbrd-grabber`
+3. Run the build script for your OS:
+
+* Linux: `./build.sh`
+* macOS: `./build-mac.sh`
+
+Note: Build script will prompt for sudo password. Do not run build script as root (i.e.: `sudo ./build.sh`) or program will fail to run. 
 
 ## Contributors
 <!-- ALL-CONTRIBUTORS-LIST:START -->
