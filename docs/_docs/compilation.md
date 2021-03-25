@@ -80,17 +80,21 @@ Bullets with '`*`' are mandatory, other are optional.
 ## Instructions
 
 ### Qt
-You can install Qt from the command line, for example using using `apt`:
+You can install Qt from the command line, for example using using `apt`.
+Recent Grabber versions require a more recent Qt version. 5.14 should be enough. You can find the latest versions in the this package archive: https://launchpad.net/~beineri. Make sure to choose the repository which reflects your distro version. For example, in the case of Ubuntu 18.04 Bionic Beaver:
 ```bash
-sudo apt install -y "qtbase5-dev" "qtscript5-dev" "qtmultimedia5-dev" "qtdeclarative5-dev" "qttools5-dev" "qttools5-dev-tools"
+sudo add-apt-repository ppa:beineri/opt-qt-5.15.2-bionic
+sudo apt-get update
+sudo apt install -y "qt515base" "qt515multimedia" "qt515script" "qt515tools" "qt515translations"
+source /opt/qt515/bin/qt515-env.sh
 ```
 
 If you're using Fedora:
 ```bash
-sudo dnf install -y "qt5-qtbase" "qt5-qtbase-devel" "qt5-qtmultimedia-devel" "qt5-qtscript-devel" "qscintilla-qt5-devel" "qt5-linguist" --best
+sudo dnf install -y "qt515base" "qt515multimedia" "qt515script" "qt515tools" "qt515translations" --best
 ```
 
-Alternatively, you can find the 5.12.3 x64 installer here: [https://download.qt.io/official_releases/qt/5.12/5.12.3/qt-opensource-linux-x64-5.12.3.run.mirrorlist](https://download.qt.io/official_releases/qt/5.12/5.12.3/qt-opensource-linux-x64-5.12.3.run.mirrorlist).
+Alternatively, you can find the latest installer here: [https://download.qt.io/official_releases/qt/](https://download.qt.io/official_releases/qt/).
 
 Just download and install.
 
